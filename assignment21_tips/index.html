@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Tips Calculator</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script defer src="./scripts.js"></script>
+  </head>
+  <body>
+    <div class="calculator">
+      <h1>Tip Calculator</h1>
+      <div class="container_elements">
+        <p>Bill</p>
+        <input
+          type="number"
+          id="bill"
+          name="bill"
+          required
+          size="10"
+          placeholder="$"
+        />
+      </div>
+      <div class="container_elements">
+        <p>Tip</p>
+        <input
+          type="number"
+          id="tip"
+          name="tip"
+          required
+          size="10"
+          placeholder="%"
+        />
+      </div>
+      <div class="container_elements">
+        <p>Tip amount</p>
+        <span>
+          <p id="amount">0</p>
+          $
+        </span>
+      </div>
+      <div class="container_elements">
+        <p>Total</p>
+        <span>
+          <p id="total">0</p>
+          $
+        </span>
+      </div>
+      <button onclick="calculate()">Calculate</button>
+    </div>
+  </body>
+</html>

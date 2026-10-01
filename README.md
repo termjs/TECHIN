@@ -27,10 +27,15 @@ Repo talpinamos visos **JavaScript modulio** užduotys, atliktos [TECHIN](https:
 | 15  | [`assignment14_strings2`](./assignment14_strings2) | (TODO: pavadinimas) | 21 |
 | 16  | [`assignment15_objects`](./assignment15_objects) | (TODO: pavadinimas) | 5 |
 | 17  | [`assignment16_objects2`](./assignment16_objects2) | (TODO: pavadinimas) | 4 |
+| 18  | [`assignment17_DOM1`](./assignment17_DOM1) | (TODO: pavadinimas) | 0 |
+| 19  | [`assignment18_DOM2`](./assignment18_DOM2) | (TODO: pavadinimas) | 0 |
+| 20  | [`assignment19_DOM3`](./assignment19_DOM3) | (TODO: pavadinimas) | 0 |
+| 21  | [`assignment20_events`](./assignment20_events) | (TODO: pavadinimas) | 0 |
+| 22  | [`assignment21_tips`](./assignment21_tips) | (TODO: pavadinimas) | 0 |
 <!-- AUTO-TABLE:END -->
 
 <!-- AUTO-TOTAL:START -->
-**Iš viso:** 16 temos, 205 atskirų užduočių failų.
+**Iš viso:** 21 temos, 205 atskirų užduočių failų.
 <!-- AUTO-TOTAL:END -->
 
 > Lentelė ir suma aukščiau generuojama automatiškai — žr. [Auto turinio atnaujinimas](#-auto-turinio-atnaujinimas).
