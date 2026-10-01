@@ -62,11 +62,21 @@
   {
     "num": "13",
     "folder": "assignment13_strings",
+    "title": "String užduotys"
+  },
+  {
+    "num": "15",
+    "folder": "assignment14_strings2",
     "title": "(TODO: pavadinimas)"
   },
   {
-    "num": "14",
-    "folder": "assignment14_objects",
+    "num": "16",
+    "folder": "assignment15_objects",
+    "title": "(TODO: pavadinimas)"
+  },
+  {
+    "num": "17",
+    "folder": "assignment16_objects2",
     "title": "(TODO: pavadinimas)"
   }
 ]
