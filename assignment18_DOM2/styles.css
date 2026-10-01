@@ -1,0 +1,14 @@
+.dark {
+  background-color: #333;
+  color: white;
+}
+
+.tab {
+  display: none;
+}
+
+.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
