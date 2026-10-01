@@ -79,18 +79,17 @@ textAreaMessage.addEventListener("change", () => {
 
 // 9. Simple Tab Switcher
 const tabButtons = document.querySelectorAll(".tab-btn");
-const tabElements = document.querySelectorAll(".tab");
 
 tabButtons.forEach((button) => {
   button.addEventListener("click", (event) => {
-    const dataTarget = document.getElementById(
+    const targetTab = document.getElementById(
       event.target.getAttribute("data-target"),
     );
-    const tab = document.getElementById(dataTarget.id);
-    const currentActive = document.querySelector(`.tab.active`);
+    if (!targetTab) return;
+    const currentActive = document.querySelector(".tab.active");
     if (currentActive) {
       currentActive.classList.remove("active");
     }
-    tab.classList.add("active");
+    targetTab.classList.add("active");
   });
 });
