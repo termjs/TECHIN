@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Simple Events</title>
+    <style>
+      #colorBox {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        border-radius: 8px;
+        transition: background-color 0.3s ease;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Count your clicks</h1>
+    <p><span id="amount">0</span>x times</p>
+    <button id="clickBtn">Click</button>
+
+    <hr />
+
+    <input type="text" id="userInput" placeholder="Type here.." />
+    <p>Preview: <span id="preview"></span></p>
+
+    <hr />
+
+    <div id="colorBox"></div>
+
+    <script>
+      let count = 0;
+      const amountSpan = document.getElementById("amount");
+      const clickButton = document.getElementById("clickBtn");
+
+      clickButton.addEventListener("click", () => {
+        count++;
+        amountSpan.textContent = count;
+      });
+
+      const userInput = document.getElementById("userInput");
+      const preview = document.getElementById("preview");
+
+      userInput.addEventListener("input", (event) => {
+        preview.textContent = event.target.value;
+      });
+
+      const colorBox = document.getElementById("colorBox");
+
+      colorBox.addEventListener("mouseenter", () => {
+        colorBox.style.backgroundColor = "green";
+      });
+
+      colorBox.addEventListener("mouseleave", () => {
+        colorBox.style.backgroundColor = "blue";
+      });
+    </script>
+  </body>
+</html>
