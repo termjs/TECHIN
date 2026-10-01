@@ -1,0 +1,12 @@
+#bg-change {
+  height: 200px;
+  width: 100%;
+  background-color: lightcoral;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
