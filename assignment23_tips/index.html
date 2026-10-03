@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip Calculator</title>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: column;
+        max-width: 500px;
+        gap: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Tip Calculator</h1>
+    <div class="container">
+      <input id="amount" type="number" size="10" placeholder="$0.00" />
+      <label for="percent"><span id="percentAmount">0%</span></label>
+      <input type="range" id="percentInput" min="0" max="30" value="0" />
+      <div>
+        <div>
+          <span>Tip</span>
+          <span id="tip">$0.00</span>
+        </div>
+        <div>
+          <span>Total</span>
+          <span id="total">$0.00</span>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const range = document.getElementById("percentInput");
+      const percentAmount = document.getElementById("percentAmount");
+      const tipElement = document.getElementById("tip");
+      const totalElement = document.getElementById("total");
+      const amountElement = document.getElementById("amount");
+
+      percentAmount.textContent = range.value + "%";
+
+      function calculateTip() {
+        const amount = Number(amountElement.value) || 0;
+        const percent = Number(range.value);
+        const tip = amount * (percent / 100);
+        const total = amount + tip;
+
+        tipElement.textContent = "$" + tip.toFixed(2);
+        totalElement.textContent = "$" + total.toFixed(2);
+      }
+
+      range.addEventListener("input", (event) => {
+        percentAmount.textContent = event.target.value + "%";
+        calculateTip();
+      });
+
+      amountElement.addEventListener("input", () => {
+        calculateTip();
+      });
+
+      calculateTip();
+    </script>
+  </body>
+</html>
