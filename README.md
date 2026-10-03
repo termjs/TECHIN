@@ -32,10 +32,11 @@ Repo talpinamos visos **JavaScript modulio** užduotys, atliktos [TECHIN](https:
 | 20  | [`assignment19_DOM3`](./assignment19_DOM3) | (TODO: pavadinimas) | 0 |
 | 21  | [`assignment20_events`](./assignment20_events) | (TODO: pavadinimas) | 0 |
 | 22  | [`assignment21_tips`](./assignment21_tips) | (TODO: pavadinimas) | 0 |
+| 23  | [`assignment22_pasiruosimas`](./assignment22_pasiruosimas) | (TODO: pavadinimas) | 11 |
 <!-- AUTO-TABLE:END -->
 
 <!-- AUTO-TOTAL:START -->
-**Iš viso:** 21 temos, 205 atskirų užduočių failų.
+**Iš viso:** 22 temos, 216 atskirų užduočių failų.
 <!-- AUTO-TOTAL:END -->
 
 > Lentelė ir suma aukščiau generuojama automatiškai — žr. [Auto turinio atnaujinimas](#-auto-turinio-atnaujinimas).
