@@ -22,7 +22,7 @@ Repo talpinamos visos **JavaScript modulio** užduotys, atliktos [TECHIN](https:
 | 09  | [`assignment09_loops2`](./assignment09_loops2) | Ciklai (pratęsimas, `do...while`) | 17 |
 | 10  | [`assignment10_arrays`](./assignment10_arrays) | Masyvai (arrays) | 19 |
 | 11  | [`assignment11_repetition`](./assignment11_repetition) | Kartojimo užduotys | 19 |
-| 12  | [`assignment12_dates`](./assignment12_dates) | Datos ir laikas | 10 |
+| 12  | [`assignment12_dates`](./assignment12_dates) | Datos ir laikas | 33 |
 | 13  | [`assignment13_strings`](./assignment13_strings) | String užduotys | 21 |
 | 15  | [`assignment14_strings2`](./assignment14_strings2) | (TODO: pavadinimas) | 21 |
 | 16  | [`assignment15_objects`](./assignment15_objects) | (TODO: pavadinimas) | 5 |
@@ -38,7 +38,7 @@ Repo talpinamos visos **JavaScript modulio** užduotys, atliktos [TECHIN](https:
 <!-- AUTO-TABLE:END -->
 
 <!-- AUTO-TOTAL:START -->
-**Iš viso:** 24 temos, 222 atskirų užduočių failų.
+**Iš viso:** 24 temos, 245 atskirų užduočių failų.
 <!-- AUTO-TOTAL:END -->
 
 > Lentelė ir suma aukščiau generuojama automatiškai — žr. [Auto turinio atnaujinimas](#-auto-turinio-atnaujinimas).
