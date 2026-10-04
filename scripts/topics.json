@@ -65,58 +65,58 @@
     "title": "String užduotys"
   },
   {
-    "num": "15",
+    "num": "14",
     "folder": "assignment14_strings2",
-    "title": "(TODO: pavadinimas)"
+    "title": "String užduotys (pratęsimas, `sort`, `map`)"
+  },
+  {
+    "num": "15",
+    "folder": "assignment15_objects",
+    "title": "Objektai (objects)"
   },
   {
     "num": "16",
-    "folder": "assignment15_objects",
-    "title": "(TODO: pavadinimas)"
+    "folder": "assignment16_objects2",
+    "title": "Objektai (pratęsimas)"
   },
   {
     "num": "17",
-    "folder": "assignment16_objects2",
-    "title": "(TODO: pavadinimas)"
+    "folder": "assignment17_DOM1",
+    "title": "DOM: spalvų pasirinkimas"
   },
   {
     "num": "18",
-    "folder": "assignment17_DOM1",
-    "title": "(TODO: pavadinimas)"
+    "folder": "assignment18_DOM2",
+    "title": "DOM: tekstas, sąrašai, klasės, paveikslėliai"
   },
   {
     "num": "19",
-    "folder": "assignment18_DOM2",
-    "title": "(TODO: pavadinimas)"
+    "folder": "assignment19_DOM3",
+    "title": "DOM: stiliai ir atributai"
   },
   {
     "num": "20",
-    "folder": "assignment19_DOM3",
-    "title": "(TODO: pavadinimas)"
+    "folder": "assignment20_events",
+    "title": "DOM įvykiai (events)"
   },
   {
     "num": "21",
-    "folder": "assignment20_events",
-    "title": "(TODO: pavadinimas)"
+    "folder": "assignment21_tips",
+    "title": "Arbatpinigių skaičiuoklė (DOM)"
   },
   {
     "num": "22",
-    "folder": "assignment21_tips",
-    "title": "(TODO: pavadinimas)"
+    "folder": "assignment22_pasiruosimas",
+    "title": "Pasiruošimas (`map`, `filter`, `sort`)"
   },
   {
     "num": "23",
-    "folder": "assignment22_pasiruosimas",
-    "title": "(TODO: pavadinimas)"
+    "folder": "assignment23_tips",
+    "title": "Arbatpinigių skaičiuoklė (vieno failo versija)"
   },
   {
     "num": "24",
-    "folder": "assignment23_tips",
-    "title": "(TODO: pavadinimas)"
-  },
-  {
-    "num": "25",
     "folder": "assignment24_reduce",
-    "title": "(TODO: pavadinimas)"
+    "title": "Masyvai: `.reduce()`"
   }
 ]

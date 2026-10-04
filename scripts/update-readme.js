@@ -74,7 +74,9 @@ function syncTopics(topics) {
 function buildTable(topics) {
   const rows = topics.map((t) => {
     const count = countTaskFiles(t.folder);
-    return `| ${t.num.padEnd(3)} | [\`${t.folder}\`](./${t.folder}) | ${t.title} | ${count} |`;
+    // Folders without task*.js (e.g. DOM mini-projects) have an index.html instead.
+    const isProject = count === 0 && fs.existsSync(path.join(ROOT, t.folder, "index.html"));
+    return `| ${t.num.padEnd(3)} | [\`${t.folder}\`](./${t.folder}) | ${t.title} | ${isProject ? "mini projektas" : count} |`;
   });
 
   const header =

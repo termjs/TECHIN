@@ -24,17 +24,17 @@ Repo talpinamos visos **JavaScript modulio** užduotys, atliktos [TECHIN](https:
 | 11  | [`assignment11_repetition`](./assignment11_repetition) | Kartojimo užduotys | 19 |
 | 12  | [`assignment12_dates`](./assignment12_dates) | Datos ir laikas | 33 |
 | 13  | [`assignment13_strings`](./assignment13_strings) | String užduotys | 21 |
-| 15  | [`assignment14_strings2`](./assignment14_strings2) | (TODO: pavadinimas) | 21 |
-| 16  | [`assignment15_objects`](./assignment15_objects) | (TODO: pavadinimas) | 5 |
-| 17  | [`assignment16_objects2`](./assignment16_objects2) | (TODO: pavadinimas) | 4 |
-| 18  | [`assignment17_DOM1`](./assignment17_DOM1) | (TODO: pavadinimas) | 0 |
-| 19  | [`assignment18_DOM2`](./assignment18_DOM2) | (TODO: pavadinimas) | 0 |
-| 20  | [`assignment19_DOM3`](./assignment19_DOM3) | (TODO: pavadinimas) | 0 |
-| 21  | [`assignment20_events`](./assignment20_events) | (TODO: pavadinimas) | 0 |
-| 22  | [`assignment21_tips`](./assignment21_tips) | (TODO: pavadinimas) | 0 |
-| 23  | [`assignment22_pasiruosimas`](./assignment22_pasiruosimas) | (TODO: pavadinimas) | 11 |
-| 24  | [`assignment23_tips`](./assignment23_tips) | (TODO: pavadinimas) | 0 |
-| 25  | [`assignment24_reduce`](./assignment24_reduce) | (TODO: pavadinimas) | 6 |
+| 14  | [`assignment14_strings2`](./assignment14_strings2) | String užduotys (pratęsimas, `sort`, `map`) | 21 |
+| 15  | [`assignment15_objects`](./assignment15_objects) | Objektai (objects) | 5 |
+| 16  | [`assignment16_objects2`](./assignment16_objects2) | Objektai (pratęsimas) | 4 |
+| 17  | [`assignment17_DOM1`](./assignment17_DOM1) | DOM: spalvų pasirinkimas | mini projektas |
+| 18  | [`assignment18_DOM2`](./assignment18_DOM2) | DOM: tekstas, sąrašai, klasės, paveikslėliai | mini projektas |
+| 19  | [`assignment19_DOM3`](./assignment19_DOM3) | DOM: stiliai ir atributai | mini projektas |
+| 20  | [`assignment20_events`](./assignment20_events) | DOM įvykiai (events) | mini projektas |
+| 21  | [`assignment21_tips`](./assignment21_tips) | Arbatpinigių skaičiuoklė (DOM) | mini projektas |
+| 22  | [`assignment22_pasiruosimas`](./assignment22_pasiruosimas) | Pasiruošimas (`map`, `filter`, `sort`) | 11 |
+| 23  | [`assignment23_tips`](./assignment23_tips) | Arbatpinigių skaičiuoklė (vieno failo versija) | mini projektas |
+| 24  | [`assignment24_reduce`](./assignment24_reduce) | Masyvai: `.reduce()` | 6 |
 <!-- AUTO-TABLE:END -->
 
 <!-- AUTO-TOTAL:START -->
@@ -47,15 +47,15 @@ Repo talpinamos visos **JavaScript modulio** užduotys, atliktos [TECHIN](https:
 
 ## 🛠️ Kaip paleisti
 
-Kiekviename aplanke (jei yra) rasi `index.html`, kuris susieja `task*.js` failus. Tiesiog atsidaryk failą naršyklėje ir žiūrėk rezultatus per **Developer Console** (`F12` → `Console`):
+Aplankuose su `index.html` (pvz. `assignment01`–`assignment07`, `assignment09`) jis susieja `task*.js` failus. Tiesiog atsidaryk failą naršyklėje ir žiūrėk rezultatus per **Developer Console** (`F12` → `Console`). DOM aplankai (`assignment17`–`assignment21`, `assignment23`) yra mini projektai — juos taip pat atidaryk per `index.html` (arba Live Server):
 
 ```bash
 git clone https://github.com/termjs/Techin.git
-cd Techin/assignment10_arrays
+cd Techin/assignment01_variables
 # atidaryk index.html naršyklėje arba paleisk su Live Server
 ```
 
-Kai kurie aplankai (`assignment08_loops1`, `assignment10_arrays` ir t.t) neturi `index.html` — juos patogiausia paleisti per Node.js:
+Likę aplankai (`assignment08_loops1`, `assignment10_arrays`–`assignment16_objects2`, `assignment22_pasiruosimas`, `assignment24_reduce`) neturi `index.html` — juos patogiausia paleisti per Node.js:
 
 ```bash
 node task1.js
