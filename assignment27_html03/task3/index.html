@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tvarkaraštis</title>
+    <style>
+      table,
+      td,
+      th,
+      tr {
+        border: 1px solid #ccc;
+        border-collapse: collapse;
+        padding: 10px 15px;
+        font-family: Arial, sans-serif;
+      }
+
+      table caption {
+        font-weight: bold;
+        font-size: 1.5rem;
+        padding: 10px;
+        font-family: Arial, sans-serif;
+      }
+
+      tbody tr:nth-child(1) td:nth-child(1) {
+        background-color: #a2cbe2;
+      }
+
+      tbody tr:nth-child(1) td:nth-child(2) {
+        background-color: #92e3a9;
+      }
+
+      tbody tr:nth-child(1) td:nth-child(3) {
+        background-color: #f7b4c6;
+      }
+
+      tbody tr:nth-child(1) td:nth-child(4) {
+        background-color: #fffde1;
+      }
+
+      tbody tr:nth-child(2) td:nth-child(1) {
+        background-color: #ff9800;
+      }
+
+      tbody tr:nth-child(2) td:nth-child(2) {
+        background-color: #cfd8dc;
+      }
+
+      tbody tr:nth-child(3) td:nth-child(1) {
+        background-color: #e57373;
+      }
+
+      tbody tr:nth-child(3) td:nth-child(2) {
+        background-color: #00acc1;
+      }
+
+      tbody tr:nth-child(3) td:nth-child(3) {
+        background-color: #ff8a80;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <caption>
+        Mokinių tvarkaraščio pavyzdys
+      </caption>
+      <thead>
+        <tr>
+          <th>Diena</th>
+          <th>Dalykas</th>
+          <th>Klasė</th>
+          <th>Pastaba</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="2">Pirmadienis</td>
+          <td>Matematika</td>
+          <td rowspan="2">5A</td>
+          <td>Kontrolinis</td>
+        </tr>
+        <tr>
+          <td>Lietuvių kalba</td>
+          <td>Namų darbai</td>
+        </tr>
+        <tr>
+          <td>Antradienis</td>
+          <td colspan="2">Kūno kultūra (jungtinė pamoka)</td>
+          <td>Sporto salė</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

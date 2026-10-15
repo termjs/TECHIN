@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form 1</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .container {
+        max-width: 1140px;
+        margin: 50px;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      fieldset {
+        border: none;
+      }
+
+      .radio-group {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+      }
+
+      .radio-item {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+
+      .input-item {
+        display: flex;
+        flex-direction: column;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <fieldset>
+          <legend>Title</legend>
+          <div class="radio-group">
+            <div class="radio-item">
+              <input
+                name="title"
+                type="radio"
+                id="mister"
+                value="mr"
+                required
+              />
+              <label for="mister">Mr</label>
+            </div>
+            <div class="radio-item">
+              <input
+                name="title"
+                type="radio"
+                id="missus"
+                value="mrs"
+                required
+              />
+              <label for="missus">Mrs</label>
+            </div>
+
+            <div class="radio-item">
+              <input
+                name="title"
+                type="radio"
+                id="miss"
+                value="miss"
+                required
+              />
+              <label for="miss">Miss</label>
+            </div>
+          </div>
+        </fieldset>
+
+        <div class="input-item">
+          <label for="name">First name</label>
+          <input id="name" name="name" type="text" required />
+        </div>
+
+        <div class="input-item">
+          <label for="last">Last name</label>
+          <input id="last" name="last" type="text" required />
+        </div>
+
+        <div class="input-item">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
+        </div>
+
+        <div class="input-item">
+          <label for="phone">Phone number</label>
+          <input id="phone" name="phone" type="tel" required />
+        </div>
+
+        <div class="input-item">
+          <label for="password">Password</label>
+          <input id="password" name="password" type="password" required />
+        </div>
+
+        <div class="input-item">
+          <label for="country">Country</label>
+          <select id="country" name="country" required>
+            <option value="" selected disabled hidden>
+              Choose your country
+            </option>
+            <option>China</option>
+            <option>North Korea</option>
+          </select>
+        </div>
+
+        <div class="radio-item">
+          <input id="terms" name="terms" type="checkbox" required />
+          <label for="terms"
+            >I agree to the <a href="#">terms and conditions</a></label
+          >
+        </div>
+
+        <div>
+          <button type="submit">Sign up</button>
+          <button type="reset">Reset form</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
