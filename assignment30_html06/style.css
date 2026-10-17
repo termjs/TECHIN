@@ -1,0 +1,139 @@
+/*****************************************************
+
+    Numatytųjų naršyklės stiliaus taisyklių perrašymas 
+
+******************************************************/
+
+/* Visos išorinės paraštės (margin) lygios 0 */
+* {
+  margin: 0;
+}
+
+/* Šrifto tipo ir dydžio taisyklės visam tinklapiui */
+
+body {
+  font-family: "Questrial", sans-serif;
+  font-size: 12pt;
+}
+
+/* Kelios klasės */
+
+.description {
+  background-color: #f3f3f3;
+}
+
+.container {
+  padding: 30px 10px;
+}
+
+/****************************************
+
+    Tinklapio antraštė 
+
+*****************************************/
+
+header {
+  background-color: #16a085;
+  color: white;
+
+  h1 {
+    text-transform: uppercase;
+    padding: 20px 0;
+  }
+
+  h3 {
+    letter-spacing: 0.3em;
+  }
+
+  nav {
+    border-top: 2px dashed white;
+    padding-top: 20px;
+
+    li {
+      display: inline-block;
+      width: 150px;
+    }
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+
+    &:link,
+    &:visited {
+      color: white;
+    }
+
+    &:hover {
+      color: white;
+      text-decoration: underline;
+    }
+
+    &:active {
+      color: gray;
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+}
+
+/*************************************
+    
+    Tinklapio pagrindinė dalis | Main 
+
+*************************************/
+
+main {
+  section:first-of-type {
+    text-align: center;
+  }
+
+  img {
+    border: 1px solid #16a085;
+  }
+
+  article {
+    h3 {
+      text-transform: uppercase;
+      color: #16a085;
+      letter-spacing: 0.3em;
+    }
+
+    ul {
+      list-style-type: square;
+    }
+
+    ol {
+      list-style-type: lower-roman;
+      line-height: 2;
+    }
+  }
+}
+
+/**************************************
+
+    Tinklapio baigiamoji dalis | footer
+
+***************************************/
+
+footer {
+  text-align: center;
+  background-color: #16a085;
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  /* by default ul yra block del to pasidaro full width */
+  ul {
+    display: inline-block;
+  }
+
+  h5 {
+    padding-top: 20px;
+  }
+}

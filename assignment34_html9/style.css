@@ -1,0 +1,23 @@
+a {
+  color: blue;
+
+  &[href^="#"] {
+    background-color: gold;
+  }
+
+  &[href$=".org"] {
+    color: red;
+  }
+
+  &[href*="example"] {
+    background-color: pink;
+  }
+}
+
+/* Nuorodos, 
+kurių tinklalapių plėtiniai yra .org, 
+teksto spalva yra raudona */
+
+/* !!! Nuorodos, 
+kurių URL adrese yra žodis "example",
+fono spalva yra rožinė */

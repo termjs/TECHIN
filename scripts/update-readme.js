@@ -15,7 +15,10 @@ const TABLE_END = "<!-- AUTO-TABLE:END -->";
 const TOTAL_START = "<!-- AUTO-TOTAL:START -->";
 const TOTAL_END = "<!-- AUTO-TOTAL:END -->";
 
-const FOLDER_PATTERN = /^(assignment\d+_[a-z0-9]+|pasikartojimas\d+)$/i;
+const FOLDER_PATTERN = /^(assignment\d+_[a-z0-9]+|pasikartojimas\d+|additional_tasks_[a-z0-9]+)$/i;
+
+// "js" topics are counted by task*.js files, "html" topics (HTML/CSS) by task folders / index.html.
+const kindOf = (folder) => (/html|css/i.test(folder) ? "html" : "js");
 
 function loadTopics() {
   return JSON.parse(fs.readFileSync(TOPICS_PATH, "utf8"));
@@ -32,11 +35,26 @@ function discoverFolders() {
     .map((d) => d.name);
 }
 
-function countTaskFiles(folder) {
+function countTaskFiles(folder, kind = kindOf(folder)) {
   const base = path.join(ROOT, folder);
+  if (!fs.existsSync(base)) return 0;
+
+  if (kind === "html") {
+    // Each task<N>/ subfolder with an html file is one task; otherwise a single index.html is one task.
+    const subTasks = fs
+      .readdirSync(base, { withFileTypes: true })
+      .filter(
+        (d) =>
+          d.isDirectory() &&
+          /^task\d+/i.test(d.name) &&
+          fs.readdirSync(path.join(base, d.name)).some((f) => f.endsWith(".html"))
+      );
+    if (subTasks.length) return subTasks.length;
+    return fs.existsSync(path.join(base, "index.html")) ? 1 : 0;
+  }
+
   const tasksSubdir = path.join(base, "tasks");
   const dir = fs.existsSync(tasksSubdir) ? tasksSubdir : base;
-  if (!fs.existsSync(dir)) return 0;
   return fs.readdirSync(dir).filter((f) => /^task[\d_]*\.js$/i.test(f)).length;
 }
 
@@ -55,8 +73,8 @@ function syncTopics(topics) {
 
   for (const folder of found) {
     if (!known.has(folder)) {
-      const num = /^pasikartojimas/i.test(folder) ? "—" : nextNum(topics);
-      topics.push({ num, folder, title: "(TODO: pavadinimas)" });
+      const num = /^(pasikartojimas|additional_)/i.test(folder) ? "—" : nextNum(topics);
+      topics.push({ num, folder, title: "(TODO: pavadinimas)", kind: kindOf(folder) });
       known.add(folder);
       changed = true;
       console.log(`+ nauja tema aptikta: ${folder} (papildyk pavadinimą scripts/topics.json)`);
@@ -73,20 +91,29 @@ function syncTopics(topics) {
 
 function buildTable(topics) {
   const rows = topics.map((t) => {
-    const count = countTaskFiles(t.folder);
-    // Folders without task*.js (e.g. DOM mini-projects) have an index.html instead.
-    const isProject = count === 0 && fs.existsSync(path.join(ROOT, t.folder, "index.html"));
-    return `| ${t.num.padEnd(3)} | [\`${t.folder}\`](./${t.folder}) | ${t.title} | ${isProject ? "mini projektas" : count} |`;
+    const count = countTaskFiles(t.folder, t.kind);
+    let label = String(count);
+    if (count === 0) {
+      // JS folders without task*.js are DOM mini-projects; external-task folders only have a task.txt link.
+      if (fs.existsSync(path.join(ROOT, t.folder, "index.html"))) label = "mini projektas";
+      else if (fs.existsSync(path.join(ROOT, t.folder, "task.txt"))) label = "išorinė užduotis";
+    }
+    return `| ${t.num.padEnd(3)} | [\`${t.folder}\`](./${t.folder}) | ${t.title} | ${label} |`;
   });
 
   const header =
     "| #   | Aplankas                                               | Tema                              | Užduočių kiekis |\n" +
     "| --- | ------------------------------------------------------ | --------------------------------- | --------------- |";
 
-  const totalTasks = topics.reduce((sum, t) => sum + countTaskFiles(t.folder), 0);
-  const totalTopics = topics.length;
+  const sumKind = (kind) =>
+    topics.filter((t) => t.kind === kind).reduce((sum, t) => sum + countTaskFiles(t.folder, t.kind), 0);
 
-  return { table: [header, ...rows].join("\n"), totalTasks, totalTopics };
+  return {
+    table: [header, ...rows].join("\n"),
+    jsTasks: sumKind("js"),
+    htmlTasks: sumKind("html"),
+    totalTopics: topics.length,
+  };
 }
 
 function replaceBetween(content, startMarker, endMarker, replacement) {
@@ -110,7 +137,7 @@ function main() {
   topics = syncedTopics;
   if (changed) saveTopics(topics);
 
-  const { table, totalTasks, totalTopics } = buildTable(topics);
+  const { table, jsTasks, htmlTasks, totalTopics } = buildTable(topics);
 
   let readme = fs.readFileSync(README_PATH, "utf8");
   readme = replaceBetween(readme, TABLE_START, TABLE_END, table);
@@ -118,11 +145,11 @@ function main() {
     readme,
     TOTAL_START,
     TOTAL_END,
-    `**Iš viso:** ${totalTopics} temos, ${totalTasks} atskirų užduočių failų.`
+    `**Iš viso:** ${totalTopics} temos, ${jsTasks + htmlTasks} užduotys (${jsTasks} JavaScript, ${htmlTasks} HTML / CSS).`
   );
 
   fs.writeFileSync(README_PATH, readme);
-  console.log(`README.md atnaujintas: ${totalTopics} temos, ${totalTasks} užduočių.`);
+  console.log(`README.md atnaujintas: ${totalTopics} temos, ${jsTasks} JS + ${htmlTasks} HTML/CSS užduočių.`);
 }
 
 main();

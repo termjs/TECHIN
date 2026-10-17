@@ -2,141 +2,217 @@
   {
     "num": "01",
     "folder": "assignment01_variables",
-    "title": "Kintamieji (variables)"
+    "title": "Kintamieji (variables)",
+    "kind": "js"
   },
   {
     "num": "02",
     "folder": "assignment02_math",
-    "title": "Matematiniai veiksmai (Math)"
+    "title": "Matematiniai veiksmai (Math)",
+    "kind": "js"
   },
   {
     "num": "03",
     "folder": "assignment03_ternary",
-    "title": "Ternary operatorius"
+    "title": "Ternary operatorius",
+    "kind": "js"
   },
   {
     "num": "04",
     "folder": "assignment04_if",
-    "title": "`if / else` sąlygos"
+    "title": "`if / else` sąlygos",
+    "kind": "js"
   },
   {
     "num": "05",
     "folder": "assignment05_switch",
-    "title": "`switch` konstrukcija"
+    "title": "`switch` konstrukcija",
+    "kind": "js"
   },
   {
     "num": "06",
     "folder": "assignment06_functions",
-    "title": "Funkcijos (pagrindai)"
+    "title": "Funkcijos (pagrindai)",
+    "kind": "js"
   },
   {
     "num": "07",
     "folder": "assignment07_functions2",
-    "title": "Funkcijos (pratęsimas)"
+    "title": "Funkcijos (pratęsimas)",
+    "kind": "js"
   },
   {
     "num": "08",
     "folder": "assignment08_loops1",
-    "title": "Ciklai `for` / `while`"
+    "title": "Ciklai `for` / `while`",
+    "kind": "js"
   },
   {
     "num": "09",
     "folder": "assignment09_loops2",
-    "title": "Ciklai (pratęsimas, `do...while`)"
+    "title": "Ciklai (pratęsimas, `do...while`)",
+    "kind": "js"
   },
   {
     "num": "10",
     "folder": "assignment10_arrays",
-    "title": "Masyvai (arrays)"
+    "title": "Masyvai (arrays)",
+    "kind": "js"
   },
   {
     "num": "11",
     "folder": "assignment11_repetition",
-    "title": "Kartojimo užduotys"
+    "title": "Kartojimo užduotys",
+    "kind": "js"
   },
   {
     "num": "12",
     "folder": "assignment12_dates",
-    "title": "Datos ir laikas"
+    "title": "Datos ir laikas",
+    "kind": "js"
   },
   {
     "num": "13",
     "folder": "assignment13_strings",
-    "title": "String užduotys"
+    "title": "String užduotys",
+    "kind": "js"
   },
   {
     "num": "14",
     "folder": "assignment14_strings2",
-    "title": "String užduotys (pratęsimas, `sort`, `map`)"
+    "title": "String užduotys (pratęsimas, `sort`, `map`)",
+    "kind": "js"
   },
   {
     "num": "15",
     "folder": "assignment15_objects",
-    "title": "Objektai (objects)"
+    "title": "Objektai (objects)",
+    "kind": "js"
   },
   {
     "num": "16",
     "folder": "assignment16_objects2",
-    "title": "Objektai (pratęsimas)"
+    "title": "Objektai (pratęsimas)",
+    "kind": "js"
   },
   {
     "num": "17",
     "folder": "assignment17_DOM1",
-    "title": "DOM: spalvų pasirinkimas"
+    "title": "DOM: spalvų pasirinkimas",
+    "kind": "js"
   },
   {
     "num": "18",
     "folder": "assignment18_DOM2",
-    "title": "DOM: tekstas, sąrašai, klasės, paveikslėliai"
+    "title": "DOM: tekstas, sąrašai, klasės, paveikslėliai",
+    "kind": "js"
   },
   {
     "num": "19",
     "folder": "assignment19_DOM3",
-    "title": "DOM: stiliai ir atributai"
+    "title": "DOM: stiliai ir atributai",
+    "kind": "js"
   },
   {
     "num": "20",
     "folder": "assignment20_events",
-    "title": "DOM įvykiai (events)"
+    "title": "DOM įvykiai (events)",
+    "kind": "js"
   },
   {
     "num": "21",
     "folder": "assignment21_tips",
-    "title": "Arbatpinigių skaičiuoklė (DOM)"
+    "title": "Arbatpinigių skaičiuoklė (DOM)",
+    "kind": "js"
   },
   {
     "num": "22",
     "folder": "assignment22_pasiruosimas",
-    "title": "Pasiruošimas (`map`, `filter`, `sort`)"
+    "title": "Pasiruošimas (`map`, `filter`, `sort`)",
+    "kind": "js"
   },
   {
     "num": "23",
     "folder": "assignment23_tips",
-    "title": "Arbatpinigių skaičiuoklė (vieno failo versija)"
+    "title": "Arbatpinigių skaičiuoklė (vieno failo versija)",
+    "kind": "js"
   },
   {
     "num": "24",
     "folder": "assignment24_reduce",
-    "title": "Masyvai: `.reduce()`"
+    "title": "Masyvai: `.reduce()`",
+    "kind": "js"
   },
   {
     "num": "25",
     "folder": "assignment25_html01",
-    "title": "(TODO: pavadinimas)"
+    "title": "HTML pagrindai: tekstas, formatavimas, nuorodos",
+    "kind": "html"
   },
   {
     "num": "26",
     "folder": "assignment26_html02",
-    "title": "(TODO: pavadinimas)"
+    "title": "HTML: sąrašai, paveikslėliai, antraštės",
+    "kind": "html"
   },
   {
     "num": "27",
     "folder": "assignment27_html03",
-    "title": "(TODO: pavadinimas)"
+    "title": "HTML: filmai, daugiapuslapė svetainė, lentelės",
+    "kind": "html"
   },
   {
     "num": "28",
     "folder": "assignment28_html04",
-    "title": "(TODO: pavadinimas)"
+    "title": "HTML: formos",
+    "kind": "html"
+  },
+  {
+    "num": "29",
+    "folder": "assignment29_html05",
+    "title": "CSS: selektoriai",
+    "kind": "html"
+  },
+  {
+    "num": "30",
+    "folder": "assignment30_html06",
+    "title": "HTML + CSS: receptų puslapis",
+    "kind": "html"
+  },
+  {
+    "num": "31",
+    "folder": "assignment31_css1",
+    "title": "CSS selektorių žaidimas (CSS Diner)",
+    "kind": "html"
+  },
+  {
+    "num": "32",
+    "folder": "assignment32_html7",
+    "title": "CSS: To Do List",
+    "kind": "html"
+  },
+  {
+    "num": "33",
+    "folder": "assignment33_html8",
+    "title": "CSS: `nth-child` ir `:hover` selektoriai",
+    "kind": "html"
+  },
+  {
+    "num": "34",
+    "folder": "assignment34_html9",
+    "title": "CSS: nuorodų stilizavimas",
+    "kind": "html"
+  },
+  {
+    "num": "35",
+    "folder": "assignment35_html10",
+    "title": "CSS: formos elementų stilizavimas",
+    "kind": "html"
+  },
+  {
+    "num": "—",
+    "folder": "additional_tasks_html01",
+    "title": "Papildomos HTML / CSS užduotys (pseudo elementai, lentelės, formos)",
+    "kind": "html"
   }
 ]

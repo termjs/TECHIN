@@ -1,0 +1,234 @@
+:root {
+  --bg-body: #f8fafc;
+  --bg-container: #ffffff;
+  --bg-hover: #f8fafc;
+  --bg-badge: #f1f5f9;
+  --border-th: #f1f5f9;
+  --border-td: #f8fafc;
+  --img-fallback: #e2e8f0;
+
+  --text-main: #1e293b;
+  --text-dark: #0f172a;
+  --text-muted: #64748b;
+  --text-light: #94a3b8;
+  --text-email: #334155;
+
+  --active-bg: #f0fdf4;
+  --active-text: #16a34a;
+
+  --inactive-bg: #fffbeb;
+  --inactive-text: #d97706;
+
+  --offline-bg: #f8fafc;
+  --offline-text: #64748b;
+
+  --dev-bg: #eff6ff;
+  --dev-text: #2563eb;
+
+  --qa-bg: #fdf2f8;
+  --qa-text: #db2777;
+
+  --design-bg: #e0e7ff;
+  --design-text: #4f46e5;
+
+  --marketing-bg: #fff7ed;
+  --marketing-text: #ea580c;
+
+  --btn-active-text: #2563eb;
+  --btn-hover-bg: #f1f5f9;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--bg-body);
+  color: var(--text-main);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.table-container {
+  background-color: var(--bg-container);
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
+  width: 100%;
+  max-width: 900px;
+  padding: 24px;
+}
+
+.table-header {
+  margin-bottom: 20px;
+}
+
+.table-header h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.badge {
+  font-size: 0.75rem;
+  font-weight: 500;
+  background-color: var(--bg-badge);
+  color: var(--text-muted);
+  padding: 4px 10px;
+  border-radius: 8px;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-light);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border-th);
+}
+
+td {
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--border-td);
+  vertical-align: middle;
+}
+
+tr:hover {
+  background-color: var(--bg-hover);
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.user-info img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: var(--img-fallback);
+}
+
+.user-name {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-dark);
+}
+
+.user-handle {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+.status-badge.active {
+  background-color: var(--active-bg);
+  color: var(--active-text);
+}
+
+.status-badge.inactive {
+  background-color: var(--inactive-bg);
+  color: var(--inactive-text);
+}
+
+.status-badge.offline {
+  background-color: var(--offline-bg);
+  color: var(--offline-text);
+}
+
+.email-cell {
+  font-size: 0.9rem;
+  color: var(--text-email);
+}
+
+.tags-container {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+.tag.dev {
+  background-color: var(--dev-bg);
+  color: var(--dev-text);
+}
+.tag.qa {
+  background-color: var(--qa-bg);
+  color: var(--qa-text);
+}
+.tag.design {
+  background-color: var(--design-bg);
+  color: var(--design-text);
+}
+.tag.marketing {
+  background-color: var(--marketing-bg);
+  color: var(--marketing-text);
+}
+
+.pagination {
+  display: flex;
+  gap: 8px;
+  margin-top: 24px;
+}
+
+.page-btn {
+  border: none;
+  background-color: transparent;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  font-weight: 500;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+.page-btn:hover {
+  background-color: var(--btn-hover-bg);
+  color: var(--text-dark);
+}
+
+.page-btn.active {
+  background-color: var(--btn-hover-bg);
+  color: var(--btn-active-text);
+  font-weight: 600;
+}

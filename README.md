@@ -1,6 +1,6 @@
 # 🚀 TECHIN JavaScript modulis
 
-Repo talpinamos visos **JavaScript modulio** užduotys, atliktos [TECHIN](https://www.techin.lt/) kurse. Visas kelias nuo `console.log("Hello World")` iki realaus kodo.
+Repo talpinamos visos **JavaScript, HTML ir CSS** užduotys, atliktos [TECHIN](https://www.techin.lt/) kurse. Visas kelias nuo `console.log("Hello World")` iki realaus kodo.
 
 > Fork'ink laisvai, pasidaryk savo variantą, pasiūlyk PR — visada galima patobulinti!
 
@@ -35,14 +35,22 @@ Repo talpinamos visos **JavaScript modulio** užduotys, atliktos [TECHIN](https:
 | 22  | [`assignment22_pasiruosimas`](./assignment22_pasiruosimas) | Pasiruošimas (`map`, `filter`, `sort`) | 11 |
 | 23  | [`assignment23_tips`](./assignment23_tips) | Arbatpinigių skaičiuoklė (vieno failo versija) | mini projektas |
 | 24  | [`assignment24_reduce`](./assignment24_reduce) | Masyvai: `.reduce()` | 6 |
-| 25  | [`assignment25_html01`](./assignment25_html01) | (TODO: pavadinimas) | mini projektas |
-| 26  | [`assignment26_html02`](./assignment26_html02) | (TODO: pavadinimas) | mini projektas |
-| 27  | [`assignment27_html03`](./assignment27_html03) | (TODO: pavadinimas) | 0 |
-| 28  | [`assignment28_html04`](./assignment28_html04) | (TODO: pavadinimas) | 0 |
+| 25  | [`assignment25_html01`](./assignment25_html01) | HTML pagrindai: tekstas, formatavimas, nuorodos | 1 |
+| 26  | [`assignment26_html02`](./assignment26_html02) | HTML: sąrašai, paveikslėliai, antraštės | 1 |
+| 27  | [`assignment27_html03`](./assignment27_html03) | HTML: filmai, daugiapuslapė svetainė, lentelės | 3 |
+| 28  | [`assignment28_html04`](./assignment28_html04) | HTML: formos | 2 |
+| 29  | [`assignment29_html05`](./assignment29_html05) | CSS: selektoriai | 1 |
+| 30  | [`assignment30_html06`](./assignment30_html06) | HTML + CSS: receptų puslapis | 1 |
+| 31  | [`assignment31_css1`](./assignment31_css1) | CSS selektorių žaidimas (CSS Diner) | išorinė užduotis |
+| 32  | [`assignment32_html7`](./assignment32_html7) | CSS: To Do List | 1 |
+| 33  | [`assignment33_html8`](./assignment33_html8) | CSS: `nth-child` ir `:hover` selektoriai | 1 |
+| 34  | [`assignment34_html9`](./assignment34_html9) | CSS: nuorodų stilizavimas | 1 |
+| 35  | [`assignment35_html10`](./assignment35_html10) | CSS: formos elementų stilizavimas | 1 |
+| —   | [`additional_tasks_html01`](./additional_tasks_html01) | Papildomos HTML / CSS užduotys (pseudo elementai, lentelės, formos) | 4 |
 <!-- AUTO-TABLE:END -->
 
 <!-- AUTO-TOTAL:START -->
-**Iš viso:** 28 temos, 245 atskirų užduočių failų.
+**Iš viso:** 36 temos, 262 užduotys (245 JavaScript, 17 HTML / CSS).
 <!-- AUTO-TOTAL:END -->
 
 > Lentelė ir suma aukščiau generuojama automatiškai — žr. [Auto turinio atnaujinimas](#-auto-turinio-atnaujinimas).
@@ -51,7 +59,7 @@ Repo talpinamos visos **JavaScript modulio** užduotys, atliktos [TECHIN](https:
 
 ## 🛠️ Kaip paleisti
 
-Aplankuose su `index.html` (pvz. `assignment01`–`assignment07`, `assignment09`) jis susieja `task*.js` failus. Tiesiog atsidaryk failą naršyklėje ir žiūrėk rezultatus per **Developer Console** (`F12` → `Console`). DOM aplankai (`assignment17`–`assignment21`, `assignment23`) yra mini projektai — juos taip pat atidaryk per `index.html` (arba Live Server):
+Aplankuose su `index.html` (pvz. `assignment01`–`assignment07`, `assignment09`) jis susieja `task*.js` failus. Tiesiog atsidaryk failą naršyklėje ir žiūrėk rezultatus per **Developer Console** (`F12` → `Console`). DOM aplankai (`assignment17`–`assignment21`, `assignment23`) yra mini projektai, o HTML / CSS aplankai (`assignment25`–`assignment35`, `additional_tasks_html01`) — statiniai puslapiai; juos taip pat atidaryk per `index.html` (arba Live Server):
 
 ```bash
 git clone https://github.com/termjs/Techin.git
@@ -69,7 +77,7 @@ node task1.js
 
 ## 🔄 Auto turinio atnaujinimas
 
-Lentelė ir bendra suma skyriuje "📂 Turinys" generuojama automatiškai iš realaus repo turinio (`scripts/update-readme.js` skaičiuoja `task*.js` failus kiekviename aplanke). Naujus aplankus (`assignmentXX_*` arba `pasikartojimasXX`) skriptas aptinka pats ir įrašo į `scripts/topics.json` (tik pavadinimą reikia įrašyti ranka).
+Lentelė ir bendra suma skyriuje "📂 Turinys" generuojama automatiškai iš realaus repo turinio (`scripts/update-readme.js` JavaScript temose skaičiuoja `task*.js` failus, o HTML / CSS temose — `task*/` aplankus su `index.html` (arba vieną `index.html`, jei aplanke tik viena užduotis)). Naujus aplankus (`assignmentXX_*` arba `pasikartojimasXX`) skriptas aptinka pats ir įrašo į `scripts/topics.json` (tik pavadinimą reikia įrašyti ranka).
 
 Paleisti ranka:
 

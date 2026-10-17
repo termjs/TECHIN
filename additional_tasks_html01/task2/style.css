@@ -1,0 +1,148 @@
+:root {
+  --bg-gradient: linear-gradient(135deg, #74b9ff, #a29bfe, #d6a2e8);
+  --form-bg: #ffffff;
+  --text-main: #2d3436;
+  --text-muted: #b2bec3;
+  --border-color: #dfe6e9;
+  --btn-gradient: linear-gradient(to right, #74b9ff, #a29bfe);
+  --btn-text: #ffffff;
+  --shadow: rgba(0, 0, 0, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: var(--bg-gradient);
+}
+
+.form-container {
+  background-color: var(--form-bg);
+  padding: 40px;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 680px;
+  box-shadow: 0 10px 25px var(--shadow);
+}
+
+h2 {
+  color: var(--text-main);
+  margin-bottom: 25px;
+  font-size: 24px;
+  font-weight: 600;
+  position: relative;
+}
+
+h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  height: 3px;
+  width: 25px;
+  background-color: var(--text-main);
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px 25px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  color: var(--text-main);
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  font-size: 14px;
+  color: var(--text-main);
+  outline: none;
+}
+
+input::placeholder {
+  color: var(--text-muted);
+}
+
+.gender-section {
+  margin-bottom: 25px;
+}
+
+.gender-title {
+  display: block;
+  color: var(--text-main);
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.gender-options {
+  display: flex;
+  gap: 30px;
+}
+
+.gender-options label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.gender-options input[type="radio"] {
+  accent-color: #a29bfe;
+  width: 16px;
+  height: 16px;
+}
+
+.btn-register {
+  width: 100%;
+  padding: 12px;
+  background: var(--btn-gradient);
+  border: none;
+  border-radius: 4px;
+  color: var(--btn-text);
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.btn-register:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 600px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .gender-options {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

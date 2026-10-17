@@ -1,0 +1,30 @@
+Pseudo elementai
+
+Prieš nuorodas, kurios URL adrese turi trumpinį „cv“, įterpti simbolį ♛;
+Po nuorodomis, kurios URL adrese turi trumpinį „darb“, įterpti simbolį ♞;
+
+
+www.cv.lt  
+www.cvbankas.lt
+www.cvjobboard.com
+www.cvmarket.lt
+www.cvme.lt
+www.cvonline.lt
+www.darbai24.lt 
+www.darbaslietuvoje.lt
+www.darbasuzsienyje.org
+www.darbo.lt 
+darbovieta.lt
+www.dirba.lt
+www.dirbkit.lt
+www.isidarbink.lt 
+www.it-darbas.lt
+www.jobera.eu
+www.manager.lt 
+www.naujasdarbas.lt
+www.noriudarbo.lt 
+www.topjob.lt
+www.vtd.lt 
+www.vilnius.cvzona.lt 
+www.kaunas.cvzona.lt
+www.klaipeda.cvzona.lt 

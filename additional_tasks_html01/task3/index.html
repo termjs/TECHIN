@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="lt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Team Members</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="table-container">
+      <div class="table-header">
+        <h2>Team Members <span class="badge">7 Members</span></h2>
+      </div>
+
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Status</th>
+              <th>Email address</th>
+              <th>Tags</th>
+            </tr>
+          </thead>
+          <tbody id="table-body"></tbody>
+        </table>
+      </div>
+
+      <div class="pagination">
+        <button class="page-btn active" onclick="changePage(1, this)">1</button>
+        <button class="page-btn" onclick="changePage(2, this)">2</button>
+      </div>
+    </div>
+
+    <script>
+      const allMembers = [
+        {
+          name: "James Alexander",
+          handle: "@james",
+          img: "./images/benjamin-taman-Mynj8xDAFSU-unsplash.jpg",
+          status: "active",
+          email: "james@example.com",
+          tags: ["Dev", "QA"],
+        },
+        {
+          name: "Lilia Taylor",
+          handle: "@lilia",
+          img: "./images/daiga-ellaby-zUPOu58K3lA-unsplash.jpg",
+          status: "active",
+          email: "lilia.taylor@example.com",
+          tags: ["Design", "Marketing"],
+        },
+        {
+          name: "Drew Cano",
+          handle: "@drew",
+          img: "./images/h-ng-ph-m-nX8P-y9uVac-unsplash.jpg",
+          status: "inactive",
+          email: "drew.crano@example.com",
+          tags: ["Design", "Marketing"],
+        },
+        {
+          name: "Nate Conor",
+          handle: "@nate",
+          img: "./images/mathias-reding-MiRyAuFhepg-unsplash.jpg",
+          status: "offline",
+          email: "nate@example.com",
+          tags: ["Dev"],
+        },
+        {
+          name: "Melissa Brantley",
+          handle: "@melissa",
+          img: "./images/nina-zeynep-guler-Nf0rrrR4z0E-unsplash.jpg",
+          status: "active",
+          email: "melissa@example.com",
+          tags: ["Marketing"],
+        },
+        {
+          name: "Anna Smith",
+          handle: "@anna",
+          img: "./images/oleg-ivanov-HaNi1rsZ6Nc-unsplash.jpg",
+          status: "active",
+          email: "anna@example.com",
+          tags: ["Dev"],
+        },
+        {
+          name: "Ryan Howard",
+          handle: "@ryan",
+          img: "./images/vicky-hladynets-C8Ta0gwPbQg-unsplash.jpg",
+          status: "offline",
+          email: "ryan@example.com",
+          tags: ["QA", "Marketing"],
+        },
+      ];
+
+      const itemsPerPage = 5;
+
+      function renderTable(page) {
+        const tbody = document.getElementById("table-body");
+        tbody.innerHTML = "";
+
+        const start = (page - 1) * itemsPerPage;
+        const end = start + itemsPerPage;
+        const pageItems = allMembers.slice(start, end);
+
+        pageItems.forEach((member) => {
+          const row = document.createElement("tr");
+
+          const tagsHtml = member.tags
+            .map(
+              (tag) => `<span class="tag ${tag.toLowerCase()}">${tag}</span>`,
+            )
+            .join("");
+
+          row.innerHTML = `
+          <td>
+            <div class="user-info">
+              <img src="${member.img}" alt="${member.name}">
+              <div>
+                <div class="user-name">${member.name}</div>
+                <div class="user-handle">${member.handle}</div>
+              </div>
+            </div>
+          </td>
+          <td><span class="status-badge ${member.status}">${member.status}</span></td>
+          <td class="email-cell">${member.email}</td>
+          <td><div class="tags-container">${tagsHtml}</div></td>
+        `;
+          tbody.appendChild(row);
+        });
+      }
+
+      function changePage(page, btn) {
+        renderTable(page);
+        document
+          .querySelectorAll(".page-btn")
+          .forEach((b) => b.classList.remove("active"));
+        btn.classList.remove("active");
+        btn.classList.add("active");
+      }
+
+      renderTable(1);
+    </script>
+  </body>
+</html>

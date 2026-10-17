@@ -1,0 +1,8 @@
+ul li:nth-child(4n + 3) {
+  color: orange;
+}
+
+ul li:nth-child(3n + 2):hover {
+  color: pink;
+  cursor: pointer;
+}

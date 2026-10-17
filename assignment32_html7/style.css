@@ -1,0 +1,21 @@
+.container {
+  width: 500px;
+  border: 2px solid darkslategray;
+  padding: 2em;
+  margin: 5em auto;
+}
+
+ul {
+  list-style-type: none;
+  cursor: pointer;
+
+  ::before {
+    content: "★ ";
+    color: rgb(190, 190, 190);
+    font-size: 1.8rem;
+  }
+}
+
+li.active:before {
+  color: goldenrod;
+}
