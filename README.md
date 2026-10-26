@@ -47,10 +47,18 @@ Repo talpinamos visos **JavaScript, HTML ir CSS** užduotys, atliktos [TECHIN](h
 | 34  | [`assignment34_html9`](./assignment34_html9) | CSS: nuorodų stilizavimas | 1 |
 | 35  | [`assignment35_html10`](./assignment35_html10) | CSS: formos elementų stilizavimas | 1 |
 | —   | [`additional_tasks_html01`](./additional_tasks_html01) | Papildomos HTML / CSS užduotys (pseudo elementai, lentelės, formos) | 4 |
+| 36  | [`assignment36_html11`](./assignment36_html11) | (TODO: pavadinimas) | 1 |
+| 37  | [`assignment37_html12`](./assignment37_html12) | (TODO: pavadinimas) | 1 |
+| 38  | [`assignment38_html13`](./assignment38_html13) | (TODO: pavadinimas) | 1 |
+| 39  | [`assignment39_html14`](./assignment39_html14) | (TODO: pavadinimas) | 1 |
+| 40  | [`assignment40_html15`](./assignment40_html15) | (TODO: pavadinimas) | 1 |
+| 41  | [`assignment41_html16`](./assignment41_html16) | (TODO: pavadinimas) | 1 |
+| 42  | [`assignment42_html17`](./assignment42_html17) | (TODO: pavadinimas) | 1 |
+| 43  | [`assignment43_html18`](./assignment43_html18) | (TODO: pavadinimas) | 1 |
 <!-- AUTO-TABLE:END -->
 
 <!-- AUTO-TOTAL:START -->
-**Iš viso:** 36 temos, 262 užduotys (245 JavaScript, 17 HTML / CSS).
+**Iš viso:** 44 temos, 270 užduotys (245 JavaScript, 25 HTML / CSS).
 <!-- AUTO-TOTAL:END -->
 
 > Lentelė ir suma aukščiau generuojama automatiškai — žr. [Auto turinio atnaujinimas](#-auto-turinio-atnaujinimas).

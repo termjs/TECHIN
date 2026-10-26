@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  background: #fff;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.card {
+  width: 340px;
+  height: 220px;
+  background-repeat: no-repeat;
+  background-size: auto, cover;
+}
+
+.night {
+  background-image: url(img/moon.png), url(img/forest.jpg);
+  background-position:
+    center top,
+    center;
+}
+
+.space {
+  background-image: url(img/rocket.png), url(img/space.jpg);
+  background-position:
+    right 30px bottom 10px,
+    center;
+  background-size:
+    auto 200px,
+    cover;
+}
+
+.beach {
+  background-image: url(img/palm.png), url(img/sun.png), url(img/beach.jpg);
+  background-position:
+    right 20px bottom 0,
+    left 20px top 10px,
+    center;
+  background-size:
+    auto 180px,
+    auto 100px,
+    cover;
+}
+
+.burger {
+  background-image: url(img/burger.png), url(img/wood.jpg);
+  background-position:
+    left 20px bottom 15px,
+    center;
+  background-size:
+    150px auto,
+    cover;
+}

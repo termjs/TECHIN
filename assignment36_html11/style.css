@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Outfit:wght@100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.card_container {
+  margin: 2rem auto;
+  max-width: 25rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  background-color: white;
+  border: 1px solid #b9b9b9;
+}
+
+.card_banner {
+  height: 8rem;
+  background-color: #4169e1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.card_profile_picture {
+  position: absolute;
+  width: 8rem;
+  height: 8rem;
+  border: 4px solid white;
+  border-radius: 50%;
+  overflow: visible;
+  transform: translateY(30%);
+}
+
+.card_profile_picture::before {
+  content: "";
+  position: absolute;
+  inset: -7px;
+  border: 3px solid #4169e1;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.card_profile_picture img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.card_details {
+  font-family: "Google Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  gap: 0.5rem;
+}
+
+.card_socials {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.card_socials a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100%;
+  color: #fff;
+  background: #4169e1;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.card_socials a:hover,
+.card_action_buttons button:hover {
+  background-color: #2848a6;
+}
+
+.card_action_buttons {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.card_action_buttons button {
+  font-family: "Outfit", sans-serif;
+  border: none;
+  background-color: #4169e1;
+  border-radius: 9999rem;
+  color: white;
+  cursor: pointer;
+  padding: 8px 15px;
+  font-size: 1rem;
+}
+
+.card_account_insight .insight {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  gap: 0.25rem;
+}
+
+.spacer {
+  height: auto;
+  background-color: #b9b9b9;
+  width: 1px;
+}
+
+.card_account_insight {
+  display: flex;
+  gap: 1rem;
+}

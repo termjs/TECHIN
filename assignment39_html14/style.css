@@ -1,0 +1,116 @@
+:root {
+  --bun-color: #e8b063;
+  --mustard-color: #f0ba2a;
+  --cheese-color: #f0ba2a;
+  --ketchup-color: #dd3c0f;
+  --onion-color: #a349d6;
+  --onion-dot-color: #c483e3;
+  --meatball-color: #714021;
+  --lettuce-color: #3dc281;
+  --lettuce-shadow: #2fa06a;
+  --patty-color: #a8431b;
+  --patty-shadow: #8a3414;
+  --plate-color: #6e7378;
+}
+
+body {
+  background: #fff;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.sumustekas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-inline: auto;
+  width: fit-content;
+}
+
+.bandele-top {
+  width: 220px;
+  height: 90px;
+  background-color: var(--bun-color);
+  border-radius: 120px 120px 16px 16px;
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.05);
+}
+
+.garstycios {
+  width: 300px;
+  height: 14px;
+  background-color: var(--mustard-color);
+  border-radius: 3px;
+}
+
+.kecupas {
+  width: 240px;
+  height: 26px;
+  background-color: var(--ketchup-color);
+  border-radius: 2px;
+}
+
+.suris {
+  width: 300px;
+  height: 34px;
+  background-color: var(--cheese-color);
+  border-radius: 3px;
+}
+
+.svogunas {
+  width: 300px;
+  height: 14px;
+  background-color: #a73ec2;
+  border-top: 12px dotted #d58de9;
+  border-right: none;
+  border-bottom: none;
+  border-left: none;
+  box-sizing: border-box;
+}
+
+.mesos-kamuoliukai {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.mesa {
+  width: 72px;
+  height: 56px;
+  background-color: var(--meatball-color);
+  border-radius: 50%;
+}
+
+.salotos {
+  width: 280px;
+  height: 38px;
+  background-color: var(--lettuce-color);
+  border-radius: 6px 6px 70px 70px;
+  box-shadow: inset 0 -8px 0 -2px var(--lettuce-shadow);
+}
+
+.mesainio-paplotelis {
+  width: 300px;
+  height: 34px;
+  background-color: var(--patty-color);
+  border-radius: 10px;
+  border-bottom: 3px solid var(--patty-shadow);
+}
+
+.mesainio-paplotelis:last-of-type {
+  border-radius: 10px;
+}
+
+.bandele-bottom {
+  width: 230px;
+  height: 26px;
+  background-color: var(--bun-color);
+  border-radius: 8px 8px 26px 26px;
+}
+
+.lekste {
+  width: 360px;
+  height: 16px;
+  background-color: var(--plate-color);
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}

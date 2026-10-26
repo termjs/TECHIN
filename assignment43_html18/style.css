@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+}
+
+h1 {
+  font-size: clamp(1.5rem, 2.5vw, 4rem);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  padding: 3rem 5rem;
+
+  ul {
+    list-style: none;
+    display: inline-flex;
+    gap: 2rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.hero_section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 5rem;
+  height: 100vh;
+
+  img {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .hero_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+
+    a {
+      padding: 1rem 2rem;
+      background-color: rgba(255, 217, 4, 0.804);
+      text-transform: uppercase;
+      text-decoration: none;
+      color: white;
+
+      &:hover {
+        background-color: rgba(176, 150, 0, 0.68);
+      }
+    }
+  }
+}
