@@ -61,10 +61,13 @@ Repo talpinamos visos **JavaScript, HTML ir CSS** užduotys, atliktos [TECHIN](h
 | 47  | [`assignment47_html22`](./assignment47_html22) | (TODO: pavadinimas) | 1 |
 | 48  | [`assignment48_html23`](./assignment48_html23) | (TODO: pavadinimas) | 1 |
 | 49  | [`assignment49_html24`](./assignment49_html24) | (TODO: pavadinimas) | 1 |
+| 50  | [`assignment50_html25`](./assignment50_html25) | (TODO: pavadinimas) | 1 |
+| 51  | [`assignment51_html24`](./assignment51_html24) | (TODO: pavadinimas) | 1 |
+| 52  | [`assignment52_html25`](./assignment52_html25) | (TODO: pavadinimas) | 1 |
 <!-- AUTO-TABLE:END -->
 
 <!-- AUTO-TOTAL:START -->
-**Iš viso:** 50 temos, 276 užduotys (245 JavaScript, 31 HTML / CSS).
+**Iš viso:** 53 temos, 279 užduotys (245 JavaScript, 34 HTML / CSS).
 <!-- AUTO-TOTAL:END -->
 
 > Lentelė ir suma aukščiau generuojama automatiškai — žr. [Auto turinio atnaujinimas](#-auto-turinio-atnaujinimas).
